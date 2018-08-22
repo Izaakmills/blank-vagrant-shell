@@ -8,3 +8,10 @@
 - OMDB
 - Bands in Town
 
+# Required Packages
+
+- node-spotify-api [https://www.npmjs.com/package/node-spotify-api]
+- omdb api [https://www.npmjs.com/package/omdb]
+- dotenv [https://www.npmjs.com/package/dotenv]
+- bandsintown [https://www.npmjs.com/package/bandsintown]
+

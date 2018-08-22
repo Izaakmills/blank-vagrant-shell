@@ -41,8 +41,7 @@ switch (command) {
         spotifySong(searchItem)
         break;
     case "movie-this":
-        omdbMovie(searchItem)
-        console.log("movie-this")
+        omdbSearch(searchItem)
         break;
     case "do-what-it-says":
         console.log("do what it says")
@@ -58,21 +57,28 @@ function spotifySong(song) {
         if (err) {
             return console.log('Error occurred: ' + err);
         }
-        // console.log(data.tracks.items)
-        // console.log(data.tracks.items[0])
-
         var songs = data.tracks.items
-        // console.log(data.album)
         var artists = songs[0].artists[0].name
         var songLink = songs[0].href
         var songName = songs[0].name
         var album = songs[0].album.name
-        // console.log(songLink)
-        // console.log(songName)
-        // console.log(album)
-        // console.log(songs[0].album.name)
 
-        // console.log("\ndata item: " + data.tracks.items[0])
         console.log("--------\nArtist: " + artists + "\nSong: " + songName + "\nLink: " + songLink + "\nAlbum: " + album + "\n--------")
+    });
+}
+
+function omdbSearch(FMovie) {
+    console.log(FMovie)
+    omdb.search(FMovie, function (err, movie) {
+        if (err) {
+            return console.error(err);
+        }
+        if (movie.length < 1) {
+            return console.log('No movies were found!');
+        }
+        console.log(movie)
+        // movie.forEach(function (movie) {
+        //     console.log('%s (%d)', movie.title, movie.year);
+        // });
     });
 }
