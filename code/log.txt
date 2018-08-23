@@ -16,4 +16,25 @@ Song: Yes Indeed
 
 Link: https://api.spotify.com/v1/tracks/6vN77lE9LK6HP2DewaN6HZ
 
-Album: Harder Than Ever
+Album: Harder Than EverTitle: Titans
+Year Released: 2000–2001
+Actors: Casper Van Dien, Yasmine Bleeth, John Barrowman, Elizabeth Bogush
+IMDB Rating: 7.2
+Produced In: USA
+Language: English
+Plot: The Williams family, a wealthy business family living in Hawaii, hide many secrets waiting to be revealed, divorce, illegitimate children, ex-spouses, alcoholism and forbidden love.
+Title: Titans
+Year Released: 2000–2001
+Actors: Casper Van Dien, Yasmine Bleeth, John Barrowman, Elizabeth Bogush
+IMDB Rating: 7.2
+Produced In: USA
+Language: English
+Plot: The Williams family, a wealthy business family living in Hawaii, hide many secrets waiting to be revealed, divorce, illegitimate children, ex-spouses, alcoholism and forbidden love.
+
+Title: Titans
+Year Released: 2000–2001
+Actors: Casper Van Dien, Yasmine Bleeth, John Barrowman, Elizabeth Bogush
+IMDB Rating: 7.2
+Produced In: USA
+Language: English
+Plot: The Williams family, a wealthy business family living in Hawaii, hide many secrets waiting to be revealed, divorce, illegitimate children, ex-spouses, alcoholism and forbidden love.

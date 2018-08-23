@@ -1,13 +1,14 @@
 // 
 require("dotenv").config();
-var appendLog = require('fs')
+var appendLog = require('fs');
+var request = require('request');
+var env = require('dotenv')
+var bandsIT = require('bandsintown');
+const omdb = require('omdbapi');
+var Spotify = require('node-spotify-api');
 // 
 let term = process.argv[2]
 let searchItem = process.argv[3]
-var env = require('dotenv')
-var bandsIT = require('bandsintown');
-var omdb = require('omdb');
-var Spotify = require('node-spotify-api');
 
 var spotifyID = process.env.SPOTIFY_ID
 var spotifySecret = process.env.SPOTIFY_SECRET
@@ -49,45 +50,42 @@ function spotifySong(song) {
         var songs = data.tracks.items
 
         var spotifyData = [
-            "Artist: "+songs[0].artists[0].name,
-            "Song: "+songs[0].name,
-            "Link: "+songs[0].href,
-            "Album: "+songs[0].album.name
+            "Artist: " + songs[0].artists[0].name,
+            "Song: " + songs[0].name,
+            "Link: " + songs[0].href,
+            "Album: " + songs[0].album.name
         ].join('\n\n')
 
         console.log(spotifyData)
-        appendLog.appendFile("log.txt", spotifyData, function(err) {
+        appendLog.appendFile("log.txt", spotifyData, function (err) {
             if (err) throw err;
-          });
+        });
     });
 }
 
 function omdbSearch(FMovie) {
-    console.log(FMovie)
-    omdb.search(FMovie, function (err, movie) {
-        console.log(movie)
-        if (err) {
-            return console.error(err);
-        }
-        if (movie.length < 1) {
-            return console.log('No movies were found!');
-        }
-        // * Title of the movie.  // * Year the movie came out. // * IMDB Rating of the movie.
-        // * Rotten Tomatoes Rating of the movie. // * Country where the movie was produced.
-        // * Language of the movie. // * Plot of the movie.
-        // * Actors in the movie.
-     
+    request('http://www.omdbapi.com/?apikey=Trilogy&t=' + FMovie, function (error, response, body) {
+        console.log('error:', error); // Print the error if one occurred
+        console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
+        // console.log('body:', body);
+        var omdbJson = JSON.parse(body)
+        console.log(omdbJson)
         var omdbData = [
-            "Title: "+songs[0].artists[0].name,
-            "Year Released: "+songs[0].name,
-            "Actors: "+songs[0].name,
-            "IMDB Rating: "+songs[0].href,
-            "Rotten Tomatoes Rating: "+songs[0].album.name,
-            "Produced In: "+songs[0].album.name,
-            "Language: "+songs[0].album.name,
-            "Plot: "+songs[0].album.name,
+            "\n\nTitle: " + omdbJson.Title,
+            "Year Released: " + omdbJson.Year,
+            "Actors: " + omdbJson.Actors,
+            "IMDB Rating: " + omdbJson.imdbRating,
+            // "Rotten Tomatoes Rating: " + omdbJson.rottenTomatoes,
+            "Produced In: " + omdbJson.Country,
+            "Language: " + omdbJson.Language,
+            "Plot: " + omdbJson.Plot,
         ].join('\n')
         console.log(omdbData)
-
+        appendLog.appendFile("log.txt", omdbData, function (err) {
+            if (err) throw err;
+        });
     });
 }
+
+// function do-what-it-says(){
+// }
