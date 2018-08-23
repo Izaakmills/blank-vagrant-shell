@@ -1,4 +1,5 @@
 # Liri APP
+# Directions
 
 # Purpose
 
@@ -10,8 +11,9 @@
 
 # Required Packages
 
+- Request [https://www.npmjs.com/package/request]
 - node-spotify-api [https://www.npmjs.com/package/node-spotify-api]
-- omdb api [https://www.npmjs.com/package/omdb]
+- omdb api & Key [http://www.omdbapi.com/]
 - dotenv [https://www.npmjs.com/package/dotenv]
 - bandsintown [https://www.npmjs.com/package/bandsintown]
 

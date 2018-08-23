@@ -38,3 +38,31 @@ IMDB Rating: 7.2
 Produced In: USA
 Language: English
 Plot: The Williams family, a wealthy business family living in Hawaii, hide many secrets waiting to be revealed, divorce, illegitimate children, ex-spouses, alcoholism and forbidden love.
+
+Title: Titans
+Year Released: 2000–2001
+Actors: Casper Van Dien, Yasmine Bleeth, John Barrowman, Elizabeth Bogush
+IMDB Rating: 7.2
+Produced In: USA
+Language: English
+Plot: The Williams family, a wealthy business family living in Hawaii, hide many secrets waiting to be revealed, divorce, illegitimate children, ex-spouses, alcoholism and forbidden love.
+
+Venue: House of Blues
+Venue Location: Myrtle Beach, SC
+Date: 2018-09-13T20:00:43
+
+Venue: House of Blues
+Venue Location: Myrtle Beach, SC
+Date: NaN
+
+Venue: House of Blues
+Venue Location: Myrtle Beach, SC
+Date: 2018 09 13
+
+Venue: House of Blues
+Venue Location: Myrtle Beach, SC
+Date: 13/09/2018
+
+Venue: House of Blues
+Venue Location: Myrtle Beach, SC
+Date: 09/13/2018
