@@ -16,4 +16,5 @@
 - omdb api & Key [http://www.omdbapi.com/]
 - dotenv [https://www.npmjs.com/package/dotenv]
 - bandsintown [https://www.npmjs.com/package/bandsintown]
+- momentjs [http://momentjs.com/docs/#/use-it/]
 
