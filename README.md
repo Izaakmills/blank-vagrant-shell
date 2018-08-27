@@ -9,6 +9,16 @@
 - OMDB
 - Bands in Town
 
+# Install instructions
+
+1. Clone this repo
+2. NPM install all of the required packages below
+3. declare a couple env variables that store your Spotify_ID and Spotfiy_Secret keys
+4. Run one of the following commands
+  - concert-this <band> to search for upcoming concerst for a band
+  - spotfiy-this-song <song> to search for song info
+  - movie-this <movie> to search for specific movei information
+  
 # Required Packages
 
 - Request [https://www.npmjs.com/package/request]
